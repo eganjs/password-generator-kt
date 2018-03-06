@@ -4,8 +4,8 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 
 class RandomPasswordTest {
+    private val whitespaceCharSingleton: List<Char> = listOf(' ')
     private val pseudoRandomChars: List<Char> = listOf('T', 'y', 'p', 'e', 'w', 'r', 'i', 't', 'e', 'r', '1', '!')
-    private val whitespaceCharSingleton: List<Char> = (' '..' ').toList()
 
     @Test
     fun whenGeneratePasswordWithZeroLengthThenReturnStringWithCorrectLength() {
